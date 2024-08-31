@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fantasymod",
+	"version": "${version}",
+	"name": "Fantasy Mod",
+	"description": "Mod with random cool features I coded",
+	"authors": [
+		"Renegade3301yt"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/fantasymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.renegade3301.fantasymod.FantasyMod"
+		],
+		"fabric-datagen": [
+			"net.renegade3301.fantasymod.FantasyModDataGenerator"
+		],
+		"client": [
+			"net.renegade3301.fantasymod.FantasyModClient"
+		]
+	},
+	"mixins": [
+		"fantasymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
