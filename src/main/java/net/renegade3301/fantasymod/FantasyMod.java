@@ -11,6 +11,5 @@ public class FantasyMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 	}
 }
